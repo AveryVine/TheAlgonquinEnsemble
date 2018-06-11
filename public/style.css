@@ -1,0 +1,30 @@
+body {
+    background-color: #7d1212;
+}
+
+h1 {
+    color: #ffff9c;
+    font-family: 'Pacifico', cursive;
+    margin: 20px;
+}
+
+.navbar {
+    background-color: #fff8e8;
+}
+
+.remove-padding {
+    padding: 0;
+}
+
+.body-with-padding {
+    background-color: #fff8e8;
+    padding: 15px;
+}
+
+.font-roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+.font-lora {
+    font-family: 'Lora', sans-serif;
+}
