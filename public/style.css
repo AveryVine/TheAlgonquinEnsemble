@@ -1,30 +1,53 @@
 body {
-    background-color: #7d1212;
+    background-color: #6A6A6A;
+    /* background-color: cadetblue; */
+    /* background-color: #B7B2AF; */
+    background-image: url("./assets/texture.png");
 }
 
 h1 {
-    color: #ffff9c;
-    font-family: 'Pacifico', cursive;
-    margin: 20px;
+    color: #fff8e8;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.ensemble {
+    margin: 50px;
 }
 
 .navbar {
     background-color: #fff8e8;
+    font-family: 'Montserrat';
+    border-bottom: 1px;
 }
 
-.remove-padding {
-    padding: 0;
+.parallax {
+    min-height: 550px;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.body-with-padding {
+.body-container {
     background-color: #fff8e8;
-    padding: 15px;
+    box-shadow: 7px 7px 5px;
+}
+  
+#parallax1 {
+    width: 100%;
+    background-image: url("./assets/algonquinGallery.jpeg");
+    background-position: bottom;
 }
 
-.font-roboto {
-    font-family: 'Roboto', sans-serif;
+#parallax2 {
+    background-image: url("./assets/algonquinEnsemble.jpg");
+    background-position: bottom;
 }
 
-.font-lora {
-    font-family: 'Lora', sans-serif;
+.unselectable {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
 }
