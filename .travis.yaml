@@ -1,0 +1,14 @@
+# language: node_js
+# node_js:
+#  — “7”
+# script:
+#  — echo “Deploy!!”
+# install:
+#  — npm install -g firebase-tools
+# after_success:
+#  — firebase deploy — project the-algonquin-ensemble $FIREBASE_TOKEN.
+
+deploy:
+  provider: firebase
+  token:
+    secure: "Fq4Pm4fhElRUMZX0SU4aRRAwZo4/216RJ60ykLQAJrpLjhxVlpxKG0wMYOxn+Pf6kbiTnYPLCevnbIFXQlkJsey2C3ZJ3Q644+1HkTEFDBJ6p1kpQg3jsgPWzeR0V6Zkt+GQY9GLcMBcv1QyhgbD4Q0QCnb3RdtAAcXQgvlG88/yP83853rBOHxlMJNQDDDMOgqGQBkCiYKu41eCRhgBJQluWl90mliQ8285uDPpUT9RwE/LndzbLn3uMeyYhkQ1xDaFVebYziyFfaNot971QrmcxRgiYNZLbFtHz+H4W9683CLjb0SIsgdu8PtKDBx2BkUafxf/isN01IqaUpnFRVWItUj2VQrbt7nfA7j6aDBimtLeIsLfUqjsKvo+yc5VNH3Vs99aejmySlcH/UcFSYPDAwOnZLwuJcglvT1kEOFo5hxv6cIev7zME+tLykwMFhPKfeG/boGEoxZkd4Wf4BPV4NM3PRBtCplYp6LjeRvVMEuAwjKLlpyY30qEP87aXPJx9r5k1FA2+UtiqndicLcRVrKn+5W1H6ugFIrQy16dVC5MolJ+a9hgsmgGwq/uZGSbbUuDlESn4fJBdMy9zdpNJvY1GbGL3mOiyRSHCmhJS8QkuivPHITa7Kxk0lVpFtXAai+LETnvKZCFj9EigksVlgZgfpfL3pUx8im2Nkg="
