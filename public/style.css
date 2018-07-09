@@ -11,14 +11,41 @@ h1 {
     font-family: 'Montserrat';
 }
 
+h3 {
+    font-family: 'Lora';
+}
+
+p {
+    font-family: 'Lora';
+}
+
 .ensemble {
     margin: 50px;
 }
 
 .navbar {
-    background-color: #fff8e8;
-    font-family: 'Montserrat';
-    border-bottom: 1px;
+    background-color: #922724;
+    /* background-color: #9c3c39; */
+    /* color: #fff8e8 !important; */
+    font-family: 'Montserrat', sans-serif;
+    /* font-weight: bold; */
+    border-bottom: 1px solid black;
+}
+
+.navbar-brand {
+    color: #fff8e8 !important;
+}
+
+/* .col {
+    padding: 10px;
+}
+
+.col-8 {
+    padding: 10px;
+} */
+
+.active {
+    color: #fff8e8 !important;
 }
 
 .parallax {
@@ -29,18 +56,45 @@ h1 {
 }
 
 .body-container {
+    padding-top: 15px;
+    padding-bottom: 25px;
+    margin-bottom: 30px;
     background-color: #fff8e8;
     box-shadow: 7px 7px 5px;
+}
+
+.bio-image {
+    margin: 20px;
+}
+
+.bio-text {
+    margin: 15px !important;
+}
+
+.word-wrap {
+    word-wrap: break-word;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.image-text-wrapper {
+    column-count: 2;
+    column-gap: 50px;
+    padding: 50px;
+}
+
+.social {
+    border: 1px solid black;
 }
   
 #parallax1 {
     width: 100%;
-    background-image: url("./assets/algonquinGallery.jpeg");
+    background-image: url("./assets/algonquinEnsemble.jpg");
     background-position: bottom;
 }
 
 #parallax2 {
-    background-image: url("./assets/algonquinEnsemble.jpg");
+    background-image: url("./assets/algonquinGallery.jpeg");
     background-position: bottom;
 }
 
@@ -50,4 +104,61 @@ h1 {
     -webkit-user-select: none;
     -ms-user-select: none;
     -o-user-select: none;
+}
+
+.img-hover-container {
+    position: relative;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-hover-container:hover .img-hover {
+    opacity: 0.3;
+}
+  
+.img-hover-container:hover .img-hover-middle {
+    opacity: 1;
+}
+
+.img-hover {
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+
+.img-hover-middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.img-hover-text {
+    background-color: #922724;
+    border: 1px solid black;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+.spacing {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .spacing {
+        display: block;
+    }
 }

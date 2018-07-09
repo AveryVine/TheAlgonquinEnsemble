@@ -7,11 +7,11 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
     crossorigin="anonymous">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Pacifico|Lora|Montserrat">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="./style.css">
 
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="./script.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -23,7 +23,16 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+  <div id="fb-root"></div>
+  <script>(function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar">
         <span class="navbar-toggler-icon"></span>
@@ -31,61 +40,67 @@
       <span class="navbar-brand" href="#">The Algonquin Ensemble</span>
       <div class="navbar-collapse collapse" id="navbar">
         <div class="navbar-nav nav-fill w-100">
-          <a class="nav-item nav-link active" href="#">Home
+          <a class="nav-item nav-link active" href="">Home
             <span class="sr-only">(current)</span>
           </a>
-          <a class="nav-item nav-link mx-2" href="#">About Us</a>
-          <a class="nav-item nav-link mx-2" href="#">Calendar</a>
-          <div class="nav-item dropdown mx-2">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarMedia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Media
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarMedia">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-                <a class="dropdown-item" href="#">Something else here</a>
-              </div>
+          <a class="nav-item nav-link" href="aboutus.html">About Us</a>
+          <a class="nav-item nav-link" href="#">Calendar</a>
+          <div class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarMedia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Media
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarMedia">
+              <a class="dropdown-item" href="#">Watch</a>
+              <a class="dropdown-item" href="#">Listen</a>
+              <a class="dropdown-item" href="#">Read</a>
+            </div>
           </div>
-          <a class="nav-item nav-link mx-2" href="#">Patron Angels</a>
-          <a class="nav-item nav-link mx-2" href="#">Shop</a>
+          <a class="nav-item nav-link" href="#">Sponsors</a>
+          <a class="nav-item nav-link" href="#">Shop</a>
         </div>
       </div>
     </div>
   </nav>
 
   <div>
-      <div id="parallax1" class="parallax">
-          <!-- align-items-center d-flex h100 -->
-        Testing
-      </div>
+    <div id="parallax1" class="parallax"></div>
 
-      <h1 class="ensemble">THE ALGONQUIN ENSEMBLE</h1>
-      <!-- <div id="parallax2"> -->
-        <div class="container body-container">
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
-            <p>Testing</p>
+    <h1 class="ensemble">THE ALGONQUIN ENSEMBLE</h1>
+    <div class="container body-container">
+      <div class="row">
+        <div class="col word-wrap">
+          <h3>Who We Are</h3>
+          <p>The Algonquin Ensemble is a sextet formed to musically interpret and celebrate the work of Canadian Landscape Painter
+            and inspiration of the Group Of Seven - Tom Thomson.</p>
         </div>
+        <div class="col-4 spacing">
 
-      <!-- </div> -->
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-8">
+          <div class="img-hover-container">
+            <img src="./assets/sonicPalette.jpg" class="img-fluid img-hover" alt="The Sonic Palette CD">
+            <div class="img-hover-middle">
+              <a href="#">
+                <div class="img-hover-text">Buy Now</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="fb-page social" data-href="https://www.facebook.com/pg/The-Algonquin-Ensemble-257628054640468" data-tabs="timeline, events"
+            data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/pg/The-Algonquin-Ensemble-257628054640468" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/pg/The-Algonquin-Ensemble-257628054640468">The Algonquin Ensemble</a>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </div>
+
   </div>
+  <!-- </div> -->
 
   <!-- <div class="container remove-padding">
     <h1 style="margin-left: 0px">The Algonquin Ensemble</h1>
