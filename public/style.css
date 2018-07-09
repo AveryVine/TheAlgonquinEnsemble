@@ -1,7 +1,5 @@
 body {
     background-color: #6A6A6A;
-    /* background-color: cadetblue; */
-    /* background-color: #B7B2AF; */
     background-image: url("./assets/texture.png");
 }
 
@@ -25,24 +23,13 @@ p {
 
 .navbar {
     background-color: #922724;
-    /* background-color: #9c3c39; */
-    /* color: #fff8e8 !important; */
     font-family: 'Montserrat', sans-serif;
-    /* font-weight: bold; */
     border-bottom: 1px solid black;
 }
 
 .navbar-brand {
     color: #fff8e8 !important;
 }
-
-/* .col {
-    padding: 10px;
-}
-
-.col-8 {
-    padding: 10px;
-} */
 
 .active {
     color: #fff8e8 !important;
@@ -65,6 +52,7 @@ p {
 
 .bio-image {
     margin: 20px;
+    margin-bottom: 10px;
 }
 
 .bio-text {
