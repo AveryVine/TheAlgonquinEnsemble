@@ -66,7 +66,25 @@ h1 {
 .social {
     border: 1px solid black;
 }
-  
+
+.card {
+    margin-bottom: 20px;
+    box-shadow: 3px 3px 8px;
+}
+
+.card-header {
+    color: #fff8e8;
+    background-color: #922724;
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.calendar-list {
+    list-style-type: none;
+}
+
 #parallax1 {
     width: 100%;
     background-image: url("./assets/algonquinEnsemble.jpg");
@@ -75,6 +93,11 @@ h1 {
 
 #parallax2 {
     background-image: url("./assets/algonquinGallery.jpeg");
+    background-position: bottom;
+}
+
+#parallax3 {
+    background-image: url("./assets/tom-thomson.jpg");
     background-position: bottom;
 }
 
