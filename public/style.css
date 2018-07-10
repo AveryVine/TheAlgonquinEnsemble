@@ -77,6 +77,10 @@ h1 {
     background-color: #922724;
 }
 
+.fa {
+    margin-right: 10px;
+}
+
 .card-title {
     font-weight: bold;
 }
