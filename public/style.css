@@ -1,6 +1,10 @@
 body {
     background-color: #6A6A6A;
     background-image: url("./assets/texture.png");
+    word-wrap: break-word;
+    text-align: justify;
+    text-justify: inter-word;
+    overflow-x: hidden;
 }
 
 h1 {
@@ -27,34 +31,21 @@ h1 {
     color: #fff8e8 !important;
 }
 
-.parallax {
-    min-height: 550px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 .body-container {
     font-family: "Lora";
-    padding-top: 15px;
-    padding-bottom: 25px;
+    padding: 20px;
     margin-bottom: 30px;
     background-color: #fff8e8;
     box-shadow: 7px 7px 5px;
 }
 
 .bio-image {
-    margin: 20px 20px 10px 20px;
+    margin: 20px 20px 5px 0px;
+    width: 40%;
 }
 
 .bio-text {
-    margin: 15px !important;
-}
-
-.word-wrap {
-    word-wrap: break-word;
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 15px;
 }
 
 .image-text-wrapper {
@@ -65,11 +56,13 @@ h1 {
 
 .social {
     border: 1px solid black;
+    margin-right: 20px auto !important;
 }
 
 .card {
-    margin-bottom: 20px;
-    box-shadow: 3px 3px 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 2px 2px 5px;
 }
 
 .card-header {
@@ -89,20 +82,25 @@ h1 {
     list-style-type: none;
 }
 
+.parallax {
+    min-height: 400px;
+    height: 70vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: top;
+}
+
 #parallax1 {
-    width: 100%;
-    background-image: url("./assets/algonquinEnsemble.jpg");
-    background-position: bottom;
+    background-image: url("./assets/highres/west-wind.jpg");
 }
 
 #parallax2 {
-    background-image: url("./assets/algonquinGallery.jpeg");
-    background-position: bottom;
+    background-image: url("./assets/highres/national-gallery-arches-landscape-crop.jpg");
 }
 
 #parallax3 {
-    background-image: url("./assets/tom-thomson.jpg");
-    background-position: bottom;
+    background-image: url("./assets/tom-thomson-crop.jpg");
 }
 
 .unselectable {
@@ -118,6 +116,7 @@ h1 {
     width: 80%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 25px;
 }
 
 .img-hover-container:hover .img-hover {
@@ -160,12 +159,38 @@ a:hover {
     padding: 16px 32px;
 }
 
-.spacing {
-    display: none;
+@media(max-width: 992px) {
+    .parallax {
+        height: auto;
+        background-attachment: scroll;
+        border-bottom: 2px solid black;
+    }
 }
 
-@media (min-width: 768px) {
-    .spacing {
+@media(max-width: 576px) {
+    .parallax {
+        min-height: 200px;
+    }
+
+    .bio-image {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        float: none !important;
         display: block;
+    }
+
+    .calendar-list {
+        margin-top: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    @media (max-width: 992px) {
+        .navbar-brand {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
     }
 }
