@@ -5,6 +5,7 @@ body {
     text-align: justify;
     text-justify: inter-word;
     overflow-x: hidden;
+    font-family: "Lora";
 }
 
 h1 {
@@ -13,8 +14,14 @@ h1 {
     font-family: 'Montserrat';
 }
 
+h2, h3, h4 {
+    text-align: left;
+    font-family: "Montserrat";
+}
+
 .ensemble {
-    margin: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .navbar {
@@ -32,7 +39,6 @@ h1 {
 }
 
 .body-container {
-    font-family: "Lora";
     padding: 20px;
     margin-bottom: 30px;
     background-color: #fff8e8;
@@ -54,9 +60,35 @@ h1 {
     padding: 50px;
 }
 
+.fb-desktop {
+    display: block !important;
+    margin-right: 20px auto !important;
+}
+
+.fb-mobile {
+    display: none !important;
+}
+
+.fb-mobile p {
+    text-align: center;
+}
+
+.youtube-outer-block {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.youtube-inner-block{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.youtube {
+    width: 100%;
+}
+
 .social {
     border: 1px solid black;
-    margin-right: 20px auto !important;
 }
 
 .card {
@@ -78,13 +110,17 @@ h1 {
     font-weight: bold;
 }
 
+ul {
+    text-align: left;
+}
+
 .calendar-list {
     list-style-type: none;
 }
 
 .parallax {
     min-height: 400px;
-    height: 70vh;
+    height: 65vh;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -162,14 +198,35 @@ a:hover {
 @media(max-width: 992px) {
     .parallax {
         height: auto;
+        min-height: 325px;
         background-attachment: scroll;
         border-bottom: 2px solid black;
+    }
+
+    .fb-desktop {
+        display: none !important;
+    }
+
+    .fb-mobile {
+        display: block !important;
     }
 }
 
 @media(max-width: 576px) {
+    .card-header {
+        text-align: left;
+    }
+
+    .card-title {
+        text-align: left;
+    }
+    
     .parallax {
-        min-height: 200px;
+        min-height: 165px;
+    }
+
+    .section-header {
+        text-align: center;
     }
 
     .bio-image {
@@ -180,8 +237,16 @@ a:hover {
         display: block;
     }
 
+    .bio-name {
+        text-align: center;
+    }
+
     .calendar-list {
         margin-top: 20px;
+    }
+
+    .youtube-inner-block {
+        width: 100%;
     }
 }
 
