@@ -25,7 +25,7 @@ function setYouTubeVideoHeight() {
 }
 
 function setPhoneFooterClickAction() {
-    $("#footer-phone-text").click(function() {
+    $("#footer-phone").click(function() {
         var text1 = "Phone";
         var text2 = "(613) 612-0623"
         var html = $(this).html();
