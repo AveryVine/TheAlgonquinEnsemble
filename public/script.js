@@ -25,14 +25,15 @@ function setYouTubeVideoHeight() {
 }
 
 function setPhoneFooterClickAction() {
-    $("#footer-phone-text").click(function() {
+    $("#footer-phone").click(function() {
         var text1 = "Phone";
         var text2 = "(613) 612-0623"
-        var html = $(this).html();
+        var textContainer = $("#footer-phone-text");
+        var html = textContainer.html();
         if (html == text1) {
-            $(this).html(text2);
+            textContainer.html(text2);
         } else {
-            $(this).html(text1);
+            textContainer.html(text1);
             if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
                 window.location.href='tel:16136120623';
             }
