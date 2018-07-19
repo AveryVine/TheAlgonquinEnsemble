@@ -25,14 +25,14 @@
 
 <body>
 
-  <div id="fb-root"></div>
+  <!-- <div id="fb-root"></div>
   <script>(function (d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0';
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));</script> -->
 
   <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
     <div class="container">
@@ -54,13 +54,12 @@
             <div class="dropdown-menu" aria-labelledby="navbarMedia">
               <a class="dropdown-item" href="listen.html">Listen</a>
               <a class="dropdown-item" href="watch.html">Watch</a>
-              <!-- <a class="dropdown-item" href="read.html">Read</a> -->
+              <a class="dropdown-item" href="read.html">Read</a>
               <a class="dropdown-item" href="photos.html">Photos</a>
             </div>
           </div>
           <a class="nav-item nav-link" href="sponsors.html">Sponsors</a>
           <a class="nav-item nav-link" href="shop.html">Shop</a>
-          <a class="nav-item nav-link" href="contact.html">Contact</a>
         </div>
       </div>
     </div>
@@ -72,7 +71,7 @@
     <h1 class="ensemble">THE ALGONQUIN ENSEMBLE</h1>
     <div class="container body-container">
       <div class="row">
-        <div class="col-lg-8 col-12">
+        <div class="col">
           <h3 class="section-header">Who We Are</h3>
           <hr />
           <p>The Algonquin Ensemble writes & performs music inspired by great Canadian art. The members of The Algonquin Ensemble
@@ -80,10 +79,9 @@
             cello & Terry Tufts, Manzer Palette and assorted fretted instruments. The group is an eclectic mix, merging classical,
             folk and jazz backgrounds into a magnificent tapestry of musical landscapes.</p>
         </div>
-        <div class="col-lg-4 col-0"></div>
       </div>
       <div class="row">
-        <div class="col-lg-8 col-12">
+        <div class="col-lg-6 col-12">
           <div id="sonic-palette-cd-link-home" class="img-hover-container">
             <a href="shop.html">
               <img src="./assets/sonicPalette.jpg" class="img-fluid img-hover" alt="The Sonic Palette CD">
@@ -94,39 +92,60 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-4 col-12">
-          <div class="fb-desktop">
-            <div class="fb-page social" data-href="https://www.facebook.com/pg/The-Algonquin-Ensemble-257628054640468" data-width="500"
-              data-height="500" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
-              data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/pg/The-Algonquin-Ensemble-257628054640468" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/pg/The-Algonquin-Ensemble-257628054640468">The Algonquin Ensemble</a>
-              </blockquote>
+        <div class="col-lg-6 col-12">
+          <div class="card">
+            <h4 class="card-header">Algonquin Ensemble: Tom Thomson’s Voice Through Music</h4>
+            <div class="card-body">
+              <h5 class="card-title">Ottawa ChamberFest</h5>
+              <div class="row">
+                <div class="col">
+                  <ul class="calendar-list">
+                    <li>
+                      <i class="fa fa-clock"></i>10:00pm</li>
+                    <li>
+                      <i class="fa fa-calendar"></i>Thursday, August 2nd, 2018</li>
+                    <li>
+                      <i class="fa fa-building"></i>École secondaire publique De La Salle</li>
+                    <li>
+                      <i class="fa fa-compass"></i>501 Old St Patrick Street, Ottawa, ON</li>
+                    <li>
+                      <i class="fa fa-globe"></i>
+                      <a href="https://www.chamberfest.com">https://www.chamberfest.com</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="fb-mobile">
-            <p>Check out our Facebook page!</p>
-            <div class="fb-page social" data-href="https://www.facebook.com/The-Algonquin-Ensemble-257628054640468/" data-width="500"
-              data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-              <blockquote cite="https://www.facebook.com/The-Algonquin-Ensemble-257628054640468/" class="fb-xfbml-parse-ignore">
-                <a href="https://www.facebook.com/The-Algonquin-Ensemble-257628054640468/">The Algonquin Ensemble</a>
-              </blockquote>
+            <div class="card-footer text-muted">
+              <a href="calendar.html" class="btn btn-info">View Event</a>
             </div>
           </div>
         </div>
       </div>
       <div class="footer">
         <div class="row">
-          <div class="col"></div>
-          <div class="col">
-              <a href="https://www.facebook.com/The-Algonquin-Ensemble-257628054640468/" class="external-link">
-                <i class="fab fa-facebook-square"></i> &nbsp;Facebook</a>
+          <div class="col-6 col-sm-6 col-md-4 col-lg footer-object">
+            <a id="footer-facebook" href="https://www.facebook.com/The-Algonquin-Ensemble-257628054640468/" class="external-link">
+              <i class="fab fa-facebook-square"></i> &nbsp;Facebook</a>
           </div>
-          <div class="col">
-              <a href="https://twitter.com/algonensemble" class="external-link">
-                <i class="fab fa-twitter-square"></i> &nbsp;Twitter</a>
+          <div class="col-6 col-sm-6 col-md-4 col-lg footer-object">
+            <a id="footer-twitter" href="https://twitter.com/algonensemble" class="external-link">
+              <i class="fab fa-twitter-square"></i> &nbsp;Twitter</a>
           </div>
-          <div class="col"></div>
+          <div class="col-6 col-sm-6 col-md-4 col-lg footer-object">
+            <a id="footer-instagram" href="https://www.instagram.com/thealgonquinensemble/" class="external-link">
+              <i class="fab fa-instagram"></i> &nbsp;Instagram</a>
+          </div>
+          <div class="col-6 col-sm-6 col-md-6 col-lg footer-object">
+            <a id="footer-email" href="mailto:thealgonquinensemble@gmail.com" class="external-link">
+              <i class="fas fa-envelope"></i> &nbsp;Email</a>
+          </div>
+          <div class="col-12 col-sm-12 col-md-6 col-lg footer-object">
+            <a id="footer-phone" href="">
+              <i class="fas fa-phone-square"></i> &nbsp;
+              <span id="footer-phone-text">Phone</span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -136,49 +155,3 @@
 </body>
 
 </html>
-
-
-
-<!-- Image carousel is here, if they want it later -->
-
-
-<!-- </div> -->
-
-<!-- <div class="container remove-padding">
-  <h1 style="margin-left: 0px">The Algonquin Ensemble</h1>
-  <div id="carouselIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
-      <li data-target="#carouselIndicators" data-slide-to="1"></li>
-      <li data-target="#carouselIndicators" data-slide-to="2"></li>
-      <li data-target="#carouselIndicators" data-slide-to="3"></li>
-      <li data-target="#carouselIndicators" data-slide-to="4"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <img class="d-block w-100" src="./thealgonquinensemble.png" alt="First slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./thealgonquinensemble2.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./sonicpalettepremierereview.png" alt="Second slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./thealgonquinensemble3.png" alt="Third slide">
-      </div>
-      <div class="carousel-item">
-        <img class="d-block w-100" src="./sonicpalettecdavailable.png" alt="Second slide">
-      </div>
-    </div>
-    <a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-
-</div> -->

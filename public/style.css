@@ -53,9 +53,14 @@ h2, h3, h4 {
     color: #e5d5b2;
     border-top: 1px solid black;
     background-color: #332419;
-    padding: 20px;
+    padding: 10px;
     margin: 50px -20px -20px -20px;
     font-family: 'Montserrat', sans-serif;
+}
+
+.footer-object {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .footer ul {
@@ -79,21 +84,6 @@ h2, h3, h4 {
     column-count: 2;
     column-gap: 50px;
     padding: 50px;
-}
-
-.fb-desktop {
-    display: block !important;
-    margin-right: 20px auto !important;
-}
-
-.fb-mobile {
-    display: none !important;
-    width: 100% !important;
-    margin: 0 auto !important;
-}
-
-.fb-mobile p {
-    text-align: center;
 }
 
 .youtube-outer-block {
@@ -148,7 +138,6 @@ h2, h3, h4 {
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: top;
-    overflow-y: auto;
     border-bottom: 2px solid black;
 }
 
@@ -196,6 +185,10 @@ h2, h3, h4 {
     -o-user-select: none;
 }
 
+.carousel-inner {
+    border: 10px solid white;
+}
+
 .img-fluid {
     margin-bottom: 25px;
 }
@@ -207,10 +200,10 @@ h2, h3, h4 {
 }
 
 #sonic-palette-cd-link-home {
-    width: 80%;
     position: relative;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
 }
 
 .img-hover-container:hover .img-hover {
@@ -219,6 +212,14 @@ h2, h3, h4 {
   
 .img-hover-container:hover .img-hover-middle {
     opacity: 1;
+}
+
+.quote {
+    margin-top: 30px;
+}
+
+.blockquote p {
+    font-size: 1.1rem;
 }
 
 .img-hover {
@@ -256,12 +257,8 @@ a:hover {
         background-attachment: scroll;
     }
 
-    .fb-desktop {
-        display: none !important;
-    }
-
-    .fb-mobile {
-        display: block !important;
+    .blockquote-footer {
+        text-align: left !important;
     }
 }
 
@@ -286,6 +283,18 @@ a:hover {
     }
 
     .card-title {
+        text-align: left;
+    }
+
+    .card-footer {
+        text-align: center;
+    }
+
+    .carousel-inner {
+        border: 5px solid white;
+    }
+
+    .blockquote p {
         text-align: left;
     }
     
