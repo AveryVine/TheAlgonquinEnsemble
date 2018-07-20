@@ -91,9 +91,13 @@ h2, h3, h4 {
     margin-bottom: 40px;
 }
 
-.youtube-inner-block{
+.youtube-inner-block {
     width: 80%;
     margin: 0 auto;
+}
+
+.youtube-inner-block li {
+    text-align: left;
 }
 
 .youtube {
@@ -174,7 +178,7 @@ h2, h3, h4 {
 }
 
 #parallax-shop {
-    background-image: url("./assets/covers/curtains-no-colour-crop.jpg");
+    background-image: url("./assets/covers/curtains-no-colour.jpg");
 }
 
 .unselectable {
@@ -271,6 +275,10 @@ a:hover {
     .ensemble {
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    #parallax-photos {
+        background-image: url("./assets/covers/curtains-closeup-grey-mobile.jpg");
     }
 
     .card {
