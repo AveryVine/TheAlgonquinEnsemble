@@ -1,6 +1,6 @@
 body {
     background-color: #4C3E33;
-    background-image: url("./assets/texture-wood-adjusted.png");
+    background-image: url("./assets/texture-wood.png");
     word-wrap: break-word;
     text-align: justify;
     text-justify: inter-word;
@@ -141,40 +141,40 @@ h2, h3, h4 {
     border-bottom: 2px solid black;
 }
 
-#parallax1 {
-    background-image: url("./assets/highres/west-wind.jpg");
+#parallax-index {
+    background-image: url("./assets/covers/national-gallery-pool.jpg");
 }
 
-#parallax2 {
-    background-image: url("./assets/highres/john-lisa-kathryn-closeup.jpeg");
+#parallax-about {
+    background-image: url("./assets/covers/john-lisa-kathryn-closeup.jpg");
 }
 
-#parallax3 {
-    background-image: url("./assets/highres/laura-margaret-terry-closeup.jpeg");
+#parallax-calendar {
+    background-image: url("./assets/covers/laura-margaret-terry-closeup.jpg");
 }
 
-#parallax4 {
-    background-image: url("./assets/highres/terry-and-kathryn-crop.jpeg");
+#parallax-listen {
+    background-image: url("./assets/covers/terry-and-kathryn.jpg");
 }
 
-#parallax5 {
-    background-image: url("./assets/highres/national-gallery-pool-crop-adjusted.jpg");
+#parallax-watch {
+    background-image: url("./assets/covers/west-wind.jpg");
 }
 
-#parallax6 {
-    background-image: url("./assets/highres/curtains-no-colour-crop.jpeg");
+#parallax-read {
+    background-image: url("./assets/covers/tom-thomson.jpg");
 }
 
-#parallax7 {
-    background-image: url("./assets/tom-thomson-crop.jpg");
+#parallax-photos {
+    background-image: url("./assets/covers/curtains-closeup-grey.jpg");
 }
 
-#parallax8 {
-    background-image: url("./assets/highres/sonic-palette-audience-crop.jpg");
+#parallax-sponsors {
+    background-image: url("./assets/covers/sonic-palette-audience.jpg");
 }
 
-#parallax9 {
-    background-image: url("./assets/highres/curtains2-grey-crop.jpg");
+#parallax-shop {
+    background-image: url("./assets/covers/curtains-no-colour-crop.jpg");
 }
 
 .unselectable {
