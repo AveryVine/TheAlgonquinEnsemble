@@ -266,6 +266,12 @@ a:hover {
     }
 }
 
+@media(max-width: 767px) {
+    .calendar-list {
+        margin-top: 20px;
+    }
+}
+
 @media(max-width: 576px) {
     .body-container {
         box-shadow: 2px 2px 4px;
@@ -324,10 +330,6 @@ a:hover {
 
     .bio-name {
         text-align: center;
-    }
-
-    .calendar-list {
-        margin-top: 20px;
     }
 
     .youtube-inner-block {

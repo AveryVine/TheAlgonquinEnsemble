@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
-    <link rel="stylesheet" href="./style.min.css">
+    <link rel="stylesheet" href="./style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./script.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase-firestore.js"></script>
+    <script src="./CalendarEvent.js"></script>
+    <script src="./Database.js"></script>
+    <script src="./script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
@@ -62,74 +66,9 @@
         <div class="container body-container">
             <h3 class="section-header">Upcoming Events</h3>
             <hr />
-            <div class="card">
-                <h4 class="card-header">Algonquin Ensemble: Tom Thomson’s Voice Through Music</h4>
-                <div class="card-body">
-                    <h5 class="card-title">Ottawa ChamberFest</h5>
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <p class="card-text">
-                                Crisp air and crisper leaves in vibrant colours. A rich, stormy sky. Wide lakes in a thousand shades of blue. Known for his
-                                association with the Group of Seven, Tom Thomson could evoke the dynamic beauty of an autumn
-                                walk like no other. Singer-songwriter Terry Tufts, pianist Kathryn Briggs, violinist Laura
-                                Nerenberg, violist Lisa Moody, cellist Margaret Maria, and bass player John Geggie present
-                                Sonic Palette.
-                            </p>
-                        </div>
-                        <div class="col-sm-5">
-                            <ul class="calendar-list">
-                                <li>
-                                    <i class="fa fa-clock"></i>10:00pm</li>
-                                <li>
-                                    <i class="fa fa-calendar"></i>Thursday, August 2nd, 2018</li>
-                                <li>
-                                    <i class="fa fa-building"></i>École secondaire publique De La Salle</li>
-                                <li>
-                                    <i class="fa fa-compass"></i>501 Old St Patrick Street, Ottawa, ON</li>
-                                <li>
-                                    <i class="fa fa-globe"></i>
-                                    <a href="https://www.chamberfest.com" class="external-link">https://www.chamberfest.com</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer text-muted">
-                    <a href="https://ottawachambermusic.secure.force.com/ticket/#sections_a0F410000088l0uEAA" class="btn btn-info external-link">Buy Tickets - $25</a>
-                </div>
-            </div>
-            <div class="card">
-                <h4 class="card-header">Tom Thomson: Mystery and Music</h4>
-                <div class="card-body">
-                    <h5 class="card-title">Arnprior Public Library</h5>
-                    <div class="row">
-                        <div class="col-sm-7">
-                            <p class="card-text">
-                                Author Geoff Taylor reads from his book, "Tom Thomson's Last Bonfire", with musical excerpts played live from The Algonquin
-                                Ensemble's latest CD, Sonic Palette.
-                            </p>
-                        </div>
-                        <div class="col-sm-5">
-                            <ul class="calendar-list">
-                                <!-- <li><i class="fa fa-clock"></i> 10:00pm</li> -->
-                                <li>
-                                    <i class="fa fa-calendar"></i>Saturday, October 20th, 2018</li>
-                                <li>
-                                    <i class="fa fa-building"></i>Arnprior Public Library</li>
-                                <li>
-                                    <i class="fa fa-compass"></i>21 Madawaska Street, Arnprior, ON</li>
-                                <li>
-                                    <i class="fa fa-globe"></i>
-                                    <a href="https://www.arnpriorlibrary.ca" class="external-link">https://www.arnpriorlibrary.ca</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-footer text-muted">
-                    <a href="javascript:void(0);" class="btn btn-secondary external-link disabled">Buy Tickets</a>
-                </div>
-            </div>
+
+            <div id="event-list">Loading events...</div>
+
             <div class="footer">
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-4 col-lg footer-object">
