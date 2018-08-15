@@ -136,8 +136,7 @@ class CalendarEvent {
             if (!this.emptyProperty(event.website)) {
                 eventBlock += `
                     <li>
-                    <i class="fa fa-globe"></i>
-                    <a href="$WEBSITE" class="external-link">$WEBSITE</a>
+                    <i class="fa fa-globe"></i><a href="$WEBSITE" class="external-link">$WEBSITE</a>
                     </li>
                 `;
             }
