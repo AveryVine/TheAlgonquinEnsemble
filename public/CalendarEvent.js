@@ -219,7 +219,7 @@ class CalendarEvent {
             timeZone: 'UTC'
         };
         let dateObj = new Date(date);
-        if (this.isValidDate(date)) {
+        if (this.isValidDate(dateObj)) {
             let newDate = dateObj.toLocaleDateString("en-US", options);
             return newDate;
         }
