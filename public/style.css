@@ -128,6 +128,7 @@ h2, h3, h4 {
 
 .card-title {
     font-weight: bold;
+    text-align: left;
 }
 
 .calendar-list {
@@ -213,7 +214,7 @@ h2, h3, h4 {
 .img-hover-container:hover .img-hover {
     opacity: 0.3;
 }
-  
+
 .img-hover-container:hover .img-hover-middle {
     opacity: 1;
 }
@@ -311,7 +312,7 @@ a:hover {
     .blockquote p {
         text-align: left;
     }
-    
+
     .parallax {
         min-height: 165px;
     }
