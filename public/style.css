@@ -136,6 +136,37 @@ h2, h3, h4 {
     text-align: left;
 }
 
+.floating-scroll {
+	position:absolute;
+	width:50px;
+	height:50px;
+	bottom:30vh;
+	right:30px;
+	background-color:#922724;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    box-shadow: -0px 0px 2px 2px #fff8e8;
+    animation: MoveUpDown 2s ease infinite;
+}
+
+.floating-scroll:hover {
+    cursor: pointer;
+}
+
+.floating-scroll-icon{
+    margin-top: 0.3em;
+    font-size: 2em
+}
+  @keyframes MoveUpDown {
+    0%, 60%, 100% {
+      bottom: 31vh;
+    }
+    30% {
+      bottom: 32vh;
+    }
+  }
+
 .parallax {
     min-height: 400px;
     height: 65vh;
@@ -260,6 +291,14 @@ a:hover {
         height: auto;
         min-height: 325px;
         background-attachment: scroll;
+    }
+
+    .floating-scroll {
+        display: none
+    }
+
+    .floating-scroll-icon {
+        display: none
     }
 
     .blockquote-footer {

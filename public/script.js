@@ -41,8 +41,27 @@ $(document).ready(function () {
             })
     }
 
+    prepareFloatingScrollButton();
     setPhoneFooterClickAction();
 });
+
+function prepareFloatingScrollButton() {
+    $(".floating-scroll").click(function () {
+        console.log($(".ensemble").offset().top);
+        console.log($(".parallax").height());
+        $("html, body").animate({
+            scrollTop: $(".parallax").height() + 5
+        }, 1000)
+    });
+
+    $(window).scroll(function() {
+        if ($(window).scrollTop() > 50) {
+            $(".floating-scroll").fadeOut()
+        } else {
+            $(".floating-scroll").fadeIn()
+        }
+    });
+}
 
 function setExternalLinksTarget() {
     $("a.external-link").attr('target', '_blank');
