@@ -146,16 +146,21 @@ h2, h3, h4 {
 	color:#FFF;
 	border-radius:50px;
 	text-align:center;
-    box-shadow: -0px 0px 2px 3px #fff8e8;
+    box-shadow: -0px 0px 2px 2px #fff8e8;
     animation: MoveUpDown 2s ease infinite;
 }
 
+.floating-scroll:hover {
+    cursor: pointer;
+}
+
 .floating-scroll-icon{
-	margin-top: 10px;
+    margin-top: 0.3em;
+    font-size: 2em
 }
   @keyframes MoveUpDown {
     0%, 60%, 100% {
-      bottom: 30vh;
+      bottom: 31vh;
     }
     30% {
       bottom: 32vh;
@@ -286,6 +291,14 @@ a:hover {
         height: auto;
         min-height: 325px;
         background-attachment: scroll;
+    }
+
+    .floating-scroll {
+        display: none
+    }
+
+    .floating-scroll-icon {
+        display: none
     }
 
     .blockquote-footer {
