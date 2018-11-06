@@ -242,6 +242,10 @@ h2, h3, h4 {
     margin-top: 10px;
 }
 
+#cd-image-mobile {
+    display: none;
+}
+
 .img-hover-container:hover .img-hover {
     opacity: 0.3;
 }
@@ -299,6 +303,14 @@ a:hover {
 
     .floating-scroll-icon {
         display: none
+    }
+
+    #cd-image {
+        display: none;
+    }
+
+    #cd-image-mobile {
+        display: block;
     }
 
     .blockquote-footer {
