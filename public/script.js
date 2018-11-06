@@ -1,3 +1,5 @@
+let floatingButtonShouldShow = false;
+
 $(document).ready(function () {
     setExternalLinksTarget();
 
@@ -45,7 +47,13 @@ $(document).ready(function () {
     setPhoneFooterClickAction();
 });
 
+$(window).resize(function() {
+    setFloatingScrollButtonVisibility();
+})
+
 function prepareFloatingScrollButton() {
+    setFloatingScrollButtonVisibility()
+
     $(".floating-scroll").click(function () {
         console.log($(".ensemble").offset().top);
         console.log($(".parallax").height());
@@ -55,12 +63,18 @@ function prepareFloatingScrollButton() {
     });
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 50) {
-            $(".floating-scroll").fadeOut()
-        } else {
-            $(".floating-scroll").fadeIn()
+        if (floatingButtonShouldShow) {
+            if ($(window).scrollTop() > 50) {
+                $(".floating-scroll").fadeOut()
+            } else {
+                $(".floating-scroll").fadeIn()
+            }
         }
     });
+}
+
+function setFloatingScrollButtonVisibility() {
+    floatingButtonShouldShow = !($(".floating-scroll").css("display") === "none")
 }
 
 function setExternalLinksTarget() {
