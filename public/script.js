@@ -13,19 +13,28 @@ $(document).ready(function () {
         });
     } else if (currPage.includes("calendar")) {
         database = new Database();
-        database.getEvents()
+        database.getEvents(true, false)
             .then(function (events) {
+                $("#event-list").text("");
                 for (let i = 0; i < events.length; i++) {
                     eventBlock = CalendarEvent.generateEventBlock(events[i], false);
-                    if ($("#event-list").text() === "Loading events...") {
-                        $("#event-list").text("");
-                    }
                     $("#event-list").append(eventBlock);
                 }
                 setExternalLinksTarget();
             })
             .catch(function () {
                 $("#event-list").text("Unable to load events!");
+            });
+        database.getEvents(false, true)
+            .then(function (events) {
+                $("#past-event-list").text("");
+                for (let i = 0; i < events.length; i++) {
+                    eventBlock = CalendarEvent.generateEventBlock(events[i], false);
+                    $("#past-event-list").append(eventBlock);
+                }
+            })
+            .catch(function () {
+                $("#past-event-list").text("Unable to load past events!");
             });
     } else if (currPage.includes("index") || currPage === "/") {
         database = new Database();

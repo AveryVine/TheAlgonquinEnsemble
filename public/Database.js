@@ -12,7 +12,7 @@ class Database {
     }
 
     getUpcomingEvent() {
-        return this.getEvents()
+        return this.getEvents(true, false)
             .then(function (events) {
                 let event = events[0];
                 if (!event) {
@@ -22,7 +22,7 @@ class Database {
             });
     }
 
-    getEvents() {
+    getEvents(includeFuture, includePast) {
         let collection = this.db.collection("events");
         return new Promise(function (resolve, reject) {
             collection.orderBy("date").get()
@@ -32,12 +32,12 @@ class Database {
                     querySnapshot.forEach(function (doc) {
                         let data = doc.data();
                         let eventDate = new Date(data.date.value);
-                        if (!CalendarEvent.isValidDate(eventDate) || eventDate >= today) {
+                        if (!CalendarEvent.isValidDate(eventDate) || (includeFuture && eventDate >= today) || (includePast && eventDate < today)) {
                             let event = new CalendarEvent()
                                 .withTitle(data.title.value)
                                 .withSubtitle(data.subtitle.value)
                                 .withDescription(data.description.value)
-                                .withTicketPurchaseUrl(data.ticketPurchaseUrl.value)
+                                .withTicketPurchaseUrl((eventDate >= today) ? data.ticketPurchaseUrl.value : null)
                                 .withTime(data.time.value)
                                 .withDate(data.date.value)
                                 .withLocation(data.location.value)
@@ -48,6 +48,9 @@ class Database {
                             events.push(event)
                         }
                     });
+                    if (includePast && !includeFuture) {
+                        events = events.reverse()
+                    }
                     if (events.length === 0) {
                         events.push(CalendarEvent.getPlaceHolder());
                     }
