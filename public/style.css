@@ -246,6 +246,10 @@ h2, h3, h4 {
     display: none;
 }
 
+#event-list {
+    margin-bottom: 50px;
+}
+
 .img-hover-container:hover .img-hover {
     opacity: 0.3;
 }
