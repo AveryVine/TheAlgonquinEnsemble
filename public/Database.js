@@ -12,7 +12,7 @@ class Database {
     }
 
     getUpcomingEvent() {
-        return this.getEvents(true, false)
+        return this.getEvents(true, true)
             .then(function (events) {
                 let event = events[0];
                 if (!event) {

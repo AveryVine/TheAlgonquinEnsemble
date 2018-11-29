@@ -172,7 +172,7 @@ class CalendarEvent {
                 eventBlock += `Buy Tickets</a>`;
             }
         } else {
-            eventBlock += `<a href="calendar.html" class="btn btn-info">View Events</a>`;
+            eventBlock += `<a href="calendar.html" class="btn btn-info">View All Events</a>`;
         }
 
         eventBlock += `
