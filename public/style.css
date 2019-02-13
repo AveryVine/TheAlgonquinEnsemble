@@ -104,6 +104,15 @@ h2, h3, h4 {
     width: 100%;
 }
 
+.callout-image {
+    width: 100%;
+    margin-right: 3px;
+}
+
+.callout-button {
+    min-width: 90px;
+}
+
 .social {
     border: 1px solid black;
 }
@@ -246,6 +255,10 @@ h2, h3, h4 {
     display: none;
 }
 
+#callout-descriptor-mobile {
+    display: none
+}
+
 #event-list {
     margin-bottom: 50px;
 }
@@ -317,6 +330,14 @@ a:hover {
         display: block;
     }
 
+    #callout-descriptor {
+        display: none;
+    }
+
+    #callout-descriptor-mobile {
+        display: block;
+    }
+
     .blockquote-footer {
         text-align: left !important;
     }
@@ -325,6 +346,12 @@ a:hover {
 @media(max-width: 767px) {
     .calendar-list {
         margin-top: 20px;
+    }
+
+    .callout-image {
+        display: block;
+        margin: auto;
+        width: 75%;
     }
 }
 
