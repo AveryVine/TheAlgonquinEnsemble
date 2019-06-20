@@ -66,8 +66,13 @@ class CalendarEvent {
     }
 
     static generateEventBlock(event, simplified) {
-        let eventBlock = `
-            <div class="card">
+        let eventBlock = "";
+        if (simplified) {
+            eventBlock += `<div class="card mt-0">`;
+        } else {
+            eventBlock += `<div class="card">`;
+        }
+        eventBlock += `
             <h4 class="card-header">$TITLE</h4>
             <div class="card-body">
         `;
