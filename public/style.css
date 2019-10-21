@@ -259,6 +259,14 @@ h2, h3, h4 {
     display: none;
 }
 
+#callout-blockquote p {
+    text-align: center !important;
+}
+
+#callout-blockquote-footer {
+    text-align: center !important;
+}
+
 #event-list {
     margin-bottom: 50px;
 }
