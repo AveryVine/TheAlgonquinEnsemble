@@ -222,6 +222,39 @@ h2, h3, h4 {
     background-image: url("./assets/covers/curtains-no-colour.jpg");
 }
 
+#btn-covid {
+    display: block;
+    float: right;
+    margin-right: 25px;
+    font-size: larger;
+    color: white;
+}
+
+#btn-covid-tablet {
+    display: none;
+    float: right;
+    margin-right: 25px;
+    font-size: larger;
+    color: white;
+}
+
+#btn-covid-mobile {
+    display: none;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+}
+
+.covid-img {
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 .unselectable {
     user-select: none;
     -moz-user-select: none;
@@ -316,6 +349,18 @@ a:hover {
 }
 
 @media(max-width: 992px) {
+    #btn-covid {
+        display: none;
+    }
+
+    #btn-covid-tablet {
+        display: block;
+    }
+
+    #btn-covid-mobile {
+        display: none;
+    }
+
     .parallax {
         height: auto;
         min-height: 325px;
@@ -352,6 +397,18 @@ a:hover {
 }
 
 @media(max-width: 767px) {
+    #btn-covid {
+        display: none;
+    }
+
+    #btn-covid-tablet {
+        display: none;
+    }
+
+    #btn-covid-mobile {
+        display: block;
+    }
+
     .calendar-list {
         margin-top: 20px;
     }

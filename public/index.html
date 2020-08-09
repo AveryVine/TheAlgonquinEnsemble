@@ -5,11 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora|Montserrat">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -18,12 +16,8 @@
     <script src="./CalendarEvent.js"></script>
     <script src="./Database.js"></script>
     <script src="./script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <title>The Algonquin Ensemble</title>
 
@@ -45,8 +39,7 @@
                     <a class="nav-item nav-link" href="about.html">About Us</a>
                     <a class="nav-item nav-link" href="calendar.html">Calendar</a>
                     <div class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarMedia" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarMedia" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Media
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarMedia">
@@ -74,78 +67,45 @@
         <div class="container body-container">
             <div class="row">
                 <div class="col">
-                    <h3 class="section-header">Who We Are</h3>
+                    <h3 class="section-header" style="display:inline-block">Who We Are</h3>
+                    <a href="covid.html" id="btn-covid" role="button" class="btn btn-success">READ &nbsp; &mdash; &nbsp; The Algonquin Ensemble & COVID-19</a>
+                    <a href="covid.html" id="btn-covid-tablet" role="button" class="btn btn-success">READ &nbsp; &mdash; &nbsp; AE & COVID-19</a>
                     <hr />
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-12">
-                    <p>The Algonquin Ensemble writes & performs music inspired by great Canadian art. The members of The
-                        Algonquin Ensemble are: Kathryn Briggs, piano; John Geggie, double bass; Lisa Moody, viola;
-                        Laura Nerenberg, violin; Margaret Maria, cello & Terry Tufts, Manzer Palette and assorted
-                        fretted instruments. The group is an eclectic mix, merging classical, folk and jazz backgrounds
-                        into a magnificent tapestry of musical landscapes.</p>
+                    <a href="covid.html" id="btn-covid-mobile" role="button" class="btn btn-success">READ &nbsp; &mdash; &nbsp; AE & COVID-19</a>
+                    <p>The Algonquin Ensemble writes & performs music inspired by great Canadian art. The members of The Algonquin Ensemble are: Kathryn Briggs, piano; John Geggie, double bass; Lisa Moody, viola; Laura Nerenberg, violin; Margaret Maria, cello & Terry Tufts, Manzer Palette and assorted fretted instruments. The group is an eclectic mix, merging classical, folk and jazz backgrounds into a magnificent tapestry of musical landscapes.</p>
                 </div>
                 <div id="upcoming-event" class="col-lg-6 col-12">Loading event...</div>
             </div>
             <hr />
 
-            <div class="row youtube-outer-block">
-                <div class="col-lg-6 col-12">
-                    <div class="img-hover-container">
-                        <a href="calendar.html">
-                            <img src="./assets/winterscapes2019_poster.jpg" class="img-fluid img-hover"
-                                alt="Winterscapes 2019">
-                            <div class="img-hover-middle">
-                                <button type="button" class="btn btn-info">
-                                    Buy Tickets
-                                </button>
+            <div class="col-12">
+                <a href="listen.html">
+                    <div class="alert alert-success" role="alert" style="text-align: center; margin-top: 15px">
+                        <blockquote id="callout-blockquote" class="blockquote text-center">
+                            <div style="margin-top: 10px; margin-bottom: 15px;">
+                                <span id="callout-descriptor">Click here to listen to The Algonquin Ensemble in "Tom Thomson: 100 years from now", as featured on CBC's "Ideas"!</span>
+                                <span id="callout-descriptor-mobile">Tap here to listen to The Algonquin Ensemble in "Tom Thomson: 100 years from now", as featured on CBC's "Ideas"!</span>
                             </div>
-                        </a>
+                            <hr />
+                            <p class="mb-0">“The music is stunning and brings so much beauty and emotion to these docs...”</p>
+                            <footer id="callout-blockquote-footer" class="blockquote-footer text-right">Sean Foley &nbsp;|&nbsp;
+                                <cite title="Source Title">CBC Producer</cite>
+                            </footer>
+                        </blockquote>
                     </div>
-                </div>
-                <div class="col-lg-6 col-12">
-                    <iframe width="560" height="315" class="social youtube"
-                        src="https://www.youtube.com/embed/IexiSajWro8" frameborder="0"
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen></iframe>
-                    <a href="listen.html">
-                        <div class="alert alert-success" role="alert" style="text-align: center; margin-top: 15px">
-                            <blockquote id="callout-blockquote" class="blockquote text-center">
-                                <div style="margin-top: 10px; margin-bottom: 15px;">
-                                    <span id="callout-descriptor">Click here to listen to The Algonquin Ensemble in "Tom
-                                        Thomson: 100 years from now", as featured on CBC's "Ideas"!</span>
-                                    <span id="callout-descriptor-mobile">Tap here to listen to The Algonquin Ensemble in
-                                        "Tom Thomson: 100 years from now", as featured on CBC's "Ideas"!</span>
-                                </div>
-                                <hr />
-                                <p class="mb-0">“The music is stunning and brings so much beauty and emotion to these
-                                    docs...”</p>
-                                <footer id="callout-blockquote-footer" class="blockquote-footer text-right">Sean Foley &nbsp;|&nbsp;
-                                    <cite title="Source Title">CBC Producer</cite>
-                                </footer>
-                            </blockquote>
-                        </div>
-                    </a>
+                </a>
 
+            </div>
+            <div class="col-12">
+                <div class="container">
+                    <img src="./assets/margaretEdit.jpg" class="img-fluid" style="display: block; margin: auto" alt="Collage of pictures of the ensemble together">
                 </div>
             </div>
 
-            <!-- Sonic Palette CD - For reference later... (in case they want it back) -->
-            <!-- <div class="row">
-                <div class="col">
-                    <div id="sonic-palette-cd-link-home" class="img-hover-container">
-                        <a href="shop.html">
-                            <img id="cd-image" src="./assets/sonic-palette-with-banner.png" class="img-fluid img-hover" alt="Check out our latest CD!">
-                            <img id="cd-image-mobile" src="./assets/sonic-palette-with-banner-mobile.png" class="img-fluid img-hover" alt="Check out our latest CD!">
-                            <div class="img-hover-middle">
-                                <div class="btn btn-danger">
-                                    <i class="fa fa-shopping-cart"></i>Shop</div>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div> -->
             <div class="footer">
                 <div class="row">
                     <div class="col-6 col-sm-6 col-md-4 col-lg footer-object">
