@@ -194,6 +194,10 @@ h2, h3, h4 {
     background-image: url("./assets/covers/john-lisa-kathryn-closeup.jpg");
 }
 
+#parallax-our-name {
+    background-image: url("./assets/covers/tom-thomson.jpg");
+}
+
 #parallax-calendar {
     background-image: url("./assets/covers/laura-margaret-terry-closeup.jpg");
 }
